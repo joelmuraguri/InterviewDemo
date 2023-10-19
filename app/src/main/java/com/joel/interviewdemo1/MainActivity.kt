@@ -25,6 +25,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 import com.joel.interviewdemo1.ui.theme.InterviewDemo1Theme
 
 class MainActivity : ComponentActivity() {
@@ -58,7 +59,8 @@ fun AndroidLarge(){
             text = "Upcoming Trips",
             modifier = Modifier
                 .padding(30.dp),
-            fontWeight = FontWeight.ExtraBold
+            fontWeight = FontWeight.ExtraBold,
+            fontSize = 22.sp
         )
         Row(
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -93,7 +95,8 @@ fun ScreenCard(
                 text = cardValue,
                 modifier = Modifier
                     .padding(15.dp),
-                color = Color.White
+                color = Color.White,
+                fontSize = 18.sp
             )
         }
     }
